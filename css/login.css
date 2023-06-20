@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body_Back {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+
+.login_div {
+    background-color: rgb(226, 223, 223);
+    height: 500px;
+    width: 500px;
+    box-shadow: 15px 15px 15px rgb(88, 88, 89);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+
+.login_div_col1 {
+    flex: 0 0 85%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_div_col1 a {
+    color: red;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.form {
+    display: flex;
+    /* flex-basis: 100%; */
+    width: 100%;
+    padding-top: 10%;
+    flex: 0;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.form label {
+    /* padding: 10px; */
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: rgb(41, 235, 41);
+    color: white;
+}
+
+.form input {
+    padding: 15px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media all and (max-width: 552px) {
+    .login_div_col1 {
+        flex: 0 0 50%;
+    }
+    .login_div {
+        width: 350px;
+    }
+}
+
+@media all and (max-width: 394px) {
+    .login_div_col1 {
+        /* flex: 0 0 20%; */
+    }
+    .login_div {
+        width: 320px;
+    }
+}

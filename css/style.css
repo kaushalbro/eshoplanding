@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(106, 106, 106);
+}
+
+li {
+    list-style: none;
+}
+
+.upper_header_back {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 226, 218);
+}
+
+.upper_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 85%;
+    color: rgb(106, 106, 106);
+}
+
+.left_item {
+    display: flex;
+}
+
+.left_item a,
+h5 {
+    padding: 10px;
+}
+
+.header_hr {
+    align-self: center;
+    height: 20px;
+    border-radius: 20px;
+    width: 2px;
+    background-color: rgb(166, 169, 166);
+}
+
+.right_item ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.mail_icon {
+    margin-top: -6px;
+}
+
+.fa {
+    color: green;
+}
+
+#lang {
+    border: none;
+    background-color: rgb(218, 226, 218);
+}
+
+.btn_login {
+    border-style: none;
+    color: rgb(28, 27, 27);
+}
+
+
+/* ----------------------nav- bar starts-------------------------------- */
+
+.nav_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 85%;
+}
+
+.logo {
+    flex: 0 0 22%;
+}
+
+.logo1 {
+    height: 50px;
+    width: 150px;
+}
+
+
+/* inline-block to make left item in one line */
+
+.nav_bar ul li,
+.nav_cart ul li {
+    display: inline-block;
+}
+
+.link a {
+    padding: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.nav_cart ul li {
+    padding: 2px;
+}
+
+.item_price_no {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+/* .navbar>* {
+    flex: 0 0 30%;
+} */
+
+.ham_buger {
+    display: none;
+}
+
+.ham_buger .ham_line {
+    height: 5px;
+    width: 50px;
+    background-color: rgb(218, 226, 218);
+    margin: 8px;
+}
+
+
+/* ----------------------nav- bar ends-------------------------------- */
+
+
+/* to make div in center */
+
+.main_container_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    display: flex;
+    justify-content: space-between;
+    /* to make maincontainer flex of basis 85% , 15% will for space around */
+    flex: 0 0 85%;
+}
+
+.left_main_cointainer {
+    display: flex;
+    border: 1px solid rgb(218, 226, 218);
+    flex-direction: column;
+    /* to make left maincontainer flex of basis 22% out of 85% , other% will for another div on side */
+    flex: 0 0 22%;
+    /* another div be like 
+    .right_main_container {
+    display: flex;(to make its child flex)
+    flex-direction: column;(to make its child in column)
+    flex-shrink: 0;
+    flex-grow: 0;
+     height: 100hv; 
+    flex-basis: 75%;
+}  */
+}
+
+.left_main_cointainer h2 {
+    width: 100%;
+    height: 50px;
+    color: black;
+    text-align: center;
+    background-color: rgb(48, 214, 48);
+}
+
+.left_main_cointainer div {
+    line-height: 40px;
+    margin-left: 16%;
+    font-weight: 900;
+    color: rgb(48, 46, 48);
+}
+
+.left_main_cointainer div ul li a {
+    color: rgb(28, 27, 28);
+    text-align: center;
+}
+
+.right_main_container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 75%;
+}
+
+.right_main_container_top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact_info {
+    display: flex;
+}
+
+.phone-icon {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: rgb(218, 226, 218);
+    margin: 3px 5px 0 0;
+}
+
+.ph_no {
+    font-size: 15px;
+}
+
+.support {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.all_cat_drop_down {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(218, 226, 218);
+    width: 250px;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 55px;
+    /* display: none; */
+}
+
+.search_form {
+    padding: 0px 15px 15px 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.line_hr {
+    align-self: center;
+    height: 30px;
+    border-radius: 20px;
+    width: 2px;
+    background-color: rgb(166, 169, 166);
+}
+
+.search_input {
+    padding: 5px;
+    border: none;
+    width: 200px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    /* border: 1px solid rgb(166, 169, 166); */
+}
+
+.search_form div {
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(218, 226, 218);
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_form h3 {
+    margin-left: 25px;
+    /* padding: 10px; */
+    color: rgb(48, 46, 48);
+    ;
+}
+
+.search_form #form a {
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    width: 70px;
+    color: black;
+    background-color: rgb(48, 214, 48);
+}
+
+.right_main_featured_container_down {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    /* border: black 3px solid; */
+    align-items: center;
+}
+
+.featured_image {
+    min-height: 462px;
+    width: 100%;
+}
+
+.featured_image_text {
+    position: absolute;
+    color: rgb(245, 245, 245);
+    margin-left: 6%;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.over_image {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    width: 100%;
+    height: 98.5%;
+    display: flex;
+}
+
+
+/* -----------------------------------------------Second Main Container begins--------------------------- */
+
+.under_line {
+    align-self: center;
+    height: 7px;
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgb(0, 255, 0);
+    border: 1px rgb(0, 255, 0) solid;
+}
+
+.second_main_container_back {
+    display: flex;
+    justify-content: center;
+}
+
+.second_main_container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 85%;
+}
+
+.featured_product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin: 50px 0 50px 0;
+}
+
+.featured_product_img:hover {
+    padding: 8px;
+    border: black solid 3px;
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+}
+
+.featured_product_img {
+    height: 340px;
+    width: 220px;
+    padding: 10px;
+}
+
+.rating,
+.product_name {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* -----------------------------------------------Second Main Container ends--------------------------- */
+
+
+/* -----------------------------------------------Footer starts--------------------------- */
+
+footer {
+    background-color: rgb(218, 226, 218);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0 0 85%;
+}
+
+.footer_row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_row1_1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer_row1>* {
+    height: 300px;
+}
+
+.footer_row2 {
+    height: 72px;
+    color: rgb(106, 106, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_row1_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_row12 {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 55%;
+}
+
+.footer_row1_2 div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_row1_1,
+.link_col2,
+.link_col1 ul li {
+    line-height: 30px;
+    color: rgb(106, 106, 106);
+    font-weight: bold;
+}
+
+.link_col1 {
+    padding-right: 40px;
+}
+
+.footer_row1_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(41, 39, 39);
+}
+
+.footer_row1_3 #form {
+    /* background-color: red; */
+    border: 1px solid rgb(178, 182, 178);
+    margin-top: 20px;
+}
+
+.footer_mail {
+    padding: 10px 10px 10px 10px;
+    border: none;
+    width: 73%;
+}
+
+.footer_row1_3 #form a {
+    margin-left: 2%;
+}
+
+.footer_social_media {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer_social_media li a {
+    background-color: rgb(178, 182, 178);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* -----------------------------------------------Footer ends--------------------------- */
+
+
+/* Breakpoint when sceen width reach 980 px then this css will be applied */
+
+@media all and (max-width: 980px) {
+    .link a {
+        padding: 8px;
+    }
+    .left_main_cointainer h2 {
+        font-size: 20px;
+    }
+    .footer_mail {
+        padding: 10px 10px 10px 10px;
+        border: none;
+        width: 100%;
+    }
+    .footer_row1_3 {
+        align-items: center;
+    }
+    .footer_row1_3 #form {
+        width: 250px;
+    }
+    .footer_row1_3 #form a {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .upper_header_back {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(218, 226, 218);
+    }
+    .upper_header {
+        flex-direction: column;
+        flex: 0 0 95%;
+    }
+    .main_container,
+    .nav_bar,
+    .second_main_container,
+    .footer_content {
+        flex: 0 0 95%;
+    }
+    .search_input {
+        font-size: 14px;
+    }
+    .left_main_cointainer div {
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .contact_info {
+        display: none;
+    }
+    .search_form {
+        padding: 0;
+    }
+    .footer_row1 {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 770px) {
+    .nav_links {
+        display: none;
+    }
+    .ham_buger {
+        display: inline;
+        order: 3;
+    }
+    .main_container {
+        flex-direction: column;
+    }
+    .featured_image {
+        min-height: 100%;
+        width: 100%;
+    }
+    .left_main_cointainer div {
+        display: none;
+    }
+    .left_main_cointainer {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 699px) {
+    .featured_product {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 630px) {
+    .upper_header_back {
+        height: 150px;
+    }
+    /* .left_item {
+        padding-top: -10px;
+    } */
+    .search_form div {
+        flex-direction: column;
+    }
+    .line_hr {
+        display: none;
+    }
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+    .search_form #form a {
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .all_department h2 {
+        /* display: inline-block; */
+        border: red 1px solid;
+    }
+    .left_item {
+        display: inline;
+    }
+    .header_hr,
+    .mail_icon {
+        display: none;
+    }
+    .featured_product_img {
+        border: 1px solid rgb(218, 226, 218);
+        margin: 10px;
+    }
+    .footer_content,
+    .second_main_container {
+        flex: 0 0 100%;
+    }
+    .featured_product_img {
+        height: 340px;
+        width: 190px;
+        padding: 10px;
+    }
+    .footer_row12 {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 419px) {
+    .featured_product_img {
+        height: 340px;
+        width: 250px;
+        padding: 10px;
+    }
+}
